@@ -1,6 +1,7 @@
 # homework
 - - - -  
-1. Network configuration for first time
+1. Network configuration for first time  
+[Centos7 network setup](https://www.tecmint.com/network-between-guest-vm-and-host-virtualbox/)  
 ```bash
 sudo vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
 ```
@@ -23,7 +24,7 @@ Change the following:
 2. Install epel-release
 ```bash
 sudo yum -y update
-sudo yum -y wget vim
+sudo yum -y install wget vim
 sudo yum -y install epel-release
 ```
 
@@ -33,7 +34,6 @@ sudo yum -y install epel-release
 sudo localectl status
 sudo localectl list-locales | grep -i ja
 sudo localectl set-locale LANG=ja_JP.utf8
-sudo sudo localectl set-locale LANG=ja_JP.utf8
 sudo localectl status
 ```
 
@@ -113,8 +113,8 @@ Change the followings:
 > [mariadb-10.2]  
 > character-set-server=utf8  
 ```bash
-sudo systemctl enable maraidb
-sudo systemctl start maraidb
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
 ```
 
 8. Install OpenJDK 1.8.0  
